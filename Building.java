@@ -10,13 +10,13 @@ public class Building {
         this("<Name Unknown>", "<Address Unknown>", 1);
     }
 
-    /* Overloaded constructor with address only */
+    /* Overload constructor with address only */
     public Building(String address) {
         this(); // Call default constructor
         this.address = address; // Override address
     }
 
-    /* Overloaded constructor with name, address */
+    /* Overload constructor with name, address */
     public Building(String name, String address) {
         this(name, address, 1); // Call full constructor with hard-coded # floors
     }
@@ -84,6 +84,7 @@ public class Building {
     public void goDown() {
         this.goToFloor(this.activeFloor - 1);
     }
+
 
     public void showOptions() {
         System.out.println("Available options at " + this.name + ":\n + enter() \n + exit() \n + goUp() \n + goDown()\n + goToFloor(n)");
