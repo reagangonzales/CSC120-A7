@@ -127,40 +127,21 @@ public class Cafe extends Building {
         myCafe.showOptions();
 
         // Display initial inventory
-        System.out.println("Original inventory | Coffee oz: " + myCafe.nCoffeeOunces 
-                           + " | Sugar packets: " + myCafe.nSugarPackets 
-                           + " | Creams: " + myCafe.nCreams 
-                           + " | Number of Cups: " + myCafe.nCups);
+        System.out.println("Original inventory | Coffee oz: " + myCafe.nCoffeeOunces + " | Sugar packets: " + myCafe.nSugarPackets + " | Creams: " + myCafe.nCreams  + " | Number of Cups: " + myCafe.nCups);
         
         // Sell coffee and display inventory after each sale
         myCafe.sellCoffee(12, 2, 3);
-        System.out.println("Inventory after using 12 coffee ounces, 2 sugar packets, and 3 creams: "
-                           + myCafe.nCoffeeOunces + " | " 
-                           + myCafe.nSugarPackets + " | " 
-                           + myCafe.nCreams + " | " 
-                           + myCafe.nCups);
+        System.out.println("Inventory after using 12 coffee ounces, 2 sugar packets, and 3 creams: "+ myCafe.nCoffeeOunces + " | " + myCafe.nSugarPackets + " | " + myCafe.nCreams + " | " + myCafe.nCups);
         
         myCafe.sellCoffee(16, 5, 4);
-        System.out.println("Inventory after using 16 coffee ounces, 5 sugar packets, and 4 creams: "
-                           + myCafe.nCoffeeOunces + " | " 
-                           + myCafe.nSugarPackets + " | " 
-                           + myCafe.nCreams + " | " 
-                           + myCafe.nCups);
+        System.out.println("Inventory after using 16 coffee ounces, 5 sugar packets, and 4 creams: " + myCafe.nCoffeeOunces + " | " + myCafe.nSugarPackets + " | " + myCafe.nCreams + " | " + myCafe.nCups);
         
         myCafe.sellCoffee(90, 15, 20);
-        System.out.println("Inventory after using 90 coffee ounces, 15 sugar packets, and 20 creams: "
-                           + myCafe.nCoffeeOunces + " | " 
-                           + myCafe.nSugarPackets + " | " 
-                           + myCafe.nCreams + " | " 
-                           + myCafe.nCups);
+        System.out.println("Inventory after using 90 coffee ounces, 15 sugar packets, and 20 creams: " + myCafe.nCoffeeOunces + " | " + myCafe.nSugarPackets + " | " + myCafe.nCreams + " | " + myCafe.nCups);
         
         // Test overloaded sellCoffee method with additional cup parameter
         myCafe.sellCoffee(12);
-        System.out.println("Inventory after selling 12 oz coffee with 1 sugar and 1 cream by default: "
-                           + myCafe.nCoffeeOunces + " | " 
-                           + myCafe.nSugarPackets + " | " 
-                           + myCafe.nCreams + " | " 
-                           + myCafe.nCups);
+        System.out.println("Inventory after selling 12 oz coffee with 1 sugar and 1 cream by default: " + myCafe.nCoffeeOunces + " | " + myCafe.nSugarPackets + " | " + myCafe.nCreams + " | " + myCafe.nCups);
         
         // Attempt to navigate to a restricted floor
         try {
